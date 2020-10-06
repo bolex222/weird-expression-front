@@ -14,7 +14,7 @@ export default function ExpressionList ({ firebaseLoaded }) {
       const ref = firebase.database().ref('expressions')
       ref.on('value', snapshot => {
         setExpression(snapshot.val())
-        list.current.scrollTo(0, listContainer.current.scrllHeight)
+        // list.current.scrollTo(0, listContainer.current.scrllHeight)
       })
     }
   }, [firebaseLoaded, list])

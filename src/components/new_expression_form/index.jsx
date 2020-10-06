@@ -6,13 +6,18 @@ export default function NewExpressionForm ( { firebaseLoaded }) {
   const [newExpression, setNewExpression] = useState('')
   const input = useRef(null)
 
-  useEffect(() => {
-    input.current.focus()
-  }, [])
-
-  document.onkeydown = () => {
+  const focusInput = () => {
     input.current.focus()
   }
+
+  useEffect(() => {
+    input.current.focus()
+    document.addEventListener('keydown', focusInput)
+
+    return () => {
+      document.removeEventListener('keydown', focusInput)
+    }
+  }, [])
 
   const handleSubmit = event => {
     event.preventDefault()

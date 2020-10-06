@@ -1,0 +1,51 @@
+:root {
+    --color_1: #F3B72F;
+    --color_2: #1D7BE3;
+    --color_3: #9e4ed0;
+    --color_4: #F55959;
+    --color_5: #5DD299;
+}
+
+.expression-container {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 100%;
+    border-radius: 20px;
+    background-color: #272730;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    margin: 10px;
+}
+
+.title-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.expression-title {
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+}
+
+.context-container {
+    
+}
+
+.date {
+    font-size: 0.5rem;
+    color: #ffffff;
+}
+
+.button {
+    border: none;
+    background: none;
+    color: #F55959;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: translateY(2px);
+}

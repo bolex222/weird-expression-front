@@ -1,0 +1,17 @@
+.form-container {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+}
+
+.form-connexion {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 2px #ffffff;
+    height: fit-content;
+}
+
+.form-input {
+    margin: 5px;
+}

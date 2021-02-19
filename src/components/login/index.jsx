@@ -13,12 +13,14 @@ export default function Login() {
     }
 
     return (
+      <div className="form-container">
         <form className="form-connexion">
-            <label htmlFor="identifier">identifiant</label>
-            <input ref={identifier} id="identifier" className="form-input" type="text"/>
-            <label htmlFor="password">mot de pass</label>
-            <input ref={password} id="password" className="form-input" type="password"/>
-            <button className="form-input" type="submit" onClick={onSubmit}>connexion</button>
+          <label htmlFor="identifier">identifiant</label>
+          <input ref={identifier} id="identifier" className="form-input" type="text"/>
+          <label htmlFor="password">mot de pass</label>
+          <input ref={password} id="password" className="form-input" type="password"/>
+          <button className="form-input" type="submit" onClick={onSubmit}>connexion</button>
         </form>
+      </div>
     )
 }

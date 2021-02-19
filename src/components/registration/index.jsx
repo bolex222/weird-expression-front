@@ -22,7 +22,7 @@ export default function Registration() {
     }
 
     return (
-        <form>
+        <form className="form-connexion">
             <label htmlFor="identifier">identifiant</label>
             <input ref={identifierEl} id="identifier" className="form-input" type="text"/>
             <label htmlFor="password">mot de pass</label>

@@ -6,8 +6,8 @@ export default function Home({firebaseLoaded}) {
 
     return (
         <>
-            <ExpressionList firebaseLoaded={firebaseLoaded}/>
-            <NewExpressionForm firebaseLoaded={firebaseLoaded}/>
+          <NewExpressionForm firebaseLoaded={firebaseLoaded}/>
+          <ExpressionList firebaseLoaded={firebaseLoaded}/>
         </>
     )
 }
